@@ -24,6 +24,12 @@ nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd
 ``git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k``
 * By default a installation prompt will begin, but if it doesn't use ``p10k configure``. You can use it later also to try all the different themes and options
 * Activate powerlevel10k by changing the default theme to ``ZSH_THEME="powerlevel10k/powerlevel10k"`` in ``~/.zshrc``
+* To enable instant prompt paste this in your ~/.zshrc file
+```
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+```
 
 ## Install ``Zsh-autocomplete``
 ![zsh-is-dope](auto.gif)
@@ -33,13 +39,17 @@ nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd
 
 ## Install ``Zsh-syntaxhighlighting``
 ![zsh-is-dope](syntax.gif)
-``git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting``
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
 * Add the plugin to the list of plugins inside ~/.zshrc  ``plugins=( [plugins...] zsh-syntax-highlighting)``
 * Activate the plugin by ``source ~/.zshrc``
 
 ## Install ``fzf``
 ![zsh-is-dope](fzf.gif)
-``git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf``
-``~/.fzf/install``
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
 * Use ``ctrl + r`` to search for last executed commands
 * Use ``ctrl + t`` to search for files
