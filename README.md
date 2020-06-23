@@ -9,8 +9,8 @@
 ## Install ``Nerd Font``
 
 * Go to ``https://github.com/ryanoasis/``
-nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-* Download any font you prefer but make sure it support all the icons and characters required by powerlevel10k.``hack`` is strongly recommended.
+
+* Download any font you prefer but make sure it support all the icons and characters required by powerlevel10k [hack](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf) is strongly recommended.
 * Install the **.tff** file.
 
 ## Config terminal
@@ -25,7 +25,7 @@ nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd
 * By default a installation prompt will begin, but if it doesn't use ``p10k configure``. You can use it later also to try all the different themes and options
 * Activate powerlevel10k by changing the default theme to ``ZSH_THEME="powerlevel10k/powerlevel10k"`` in ``~/.zshrc``
 * To enable instant prompt paste this in your ~/.zshrc file
-```
+```https://github.com/ryanoasis/
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -53,3 +53,5 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ```
 * Use ``ctrl + r`` to search for last executed commands
 * Use ``ctrl + t`` to search for files
+ 
+ *To go back to back to bash terminal just use the **bash** command
