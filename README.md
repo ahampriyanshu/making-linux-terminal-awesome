@@ -1,6 +1,6 @@
-## ZSH
+## zsh
 
-![fzf](https://user-images.githubusercontent.com/54521023/104815961-fa44e300-583d-11eb-83a5-3d8a9866fba0.gif)
+![main](https://user-images.githubusercontent.com/54521023/104815966-003ac400-583e-11eb-9dfc-4647ba9556b6.gif)
 
 * via curl 
 ```
@@ -34,10 +34,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-* Add the plugin to the list of plugins inside ~/.zshrc  
-```
-plugins=( [plugins...] zsh-autosuggestions)
-```
+* Add the plugin to the list of plugins inside ~/.zshrc ``plugins=( [plugins...] zsh-autosuggestions)``
 * Activate the plugin by ``source ~/.zshrc``
 
 ## zsh-syntaxhighlighting
@@ -48,10 +45,7 @@ plugins=( [plugins...] zsh-autosuggestions)
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-* Add the plugin to the list of plugins inside ~/.zshrc  
-```
-plugins=( [plugins...] zsh-syntax-highlighting)
-```
+* Add the plugin to the list of plugins inside ~/.zshrc ``plugins=( [plugins...] zsh-syntax-highlighting)``
 * Activate the plugin by ``source ~/.zshrc``
 
 ## Install ``fzf``
