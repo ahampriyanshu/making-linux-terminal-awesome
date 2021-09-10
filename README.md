@@ -1,68 +1,114 @@
-# zsh
+# Making Linux Terminal Awesome
 
-![main](https://user-images.githubusercontent.com/54521023/104815966-003ac400-583e-11eb-9dfc-4647ba9556b6.gif)
+## Installation
 
-* via curl 
+### [Zsh](https://www.zsh.org/)
+
+> The Z-shell or Zsh is an UNIX shell with support for various plugins and themes.
+ 
+- **Debian(Ubuntu/Kali/Mint)**: ``sudo apt install zsh``
+- **Fedora**: ``sudo dnf install zsh``
+- **RHEL/CentOS**: ``sudo yum update && sudo yum -y install zsh``
+
+![1](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/1.png)
+
+### [Oh My Zsh](https://ohmyz.sh/)
+
+> Oh My Zsh is an open source and community-driven framework for managing Zsh configuration.
+
+* Using curl 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-* via wget
+* Using wget
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-# Nerd Font
+![2](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/2.png)
 
-* Go to [https://github.com/ryanoasis](https://github.com/ryanoasis)
-* Download any font you prefer but make sure it support all the icons and characters required by powerlevel10k [hack](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf) is strongly recommended.
-* Install the **.tff** file and make ``Hack Font`` the default font of your terminal
+### Nerd Fonts
 
-# Powerlevel10k
+> Nerd Fonts is a project that patches developer targeted fonts with a high number of glyphs (icons)
 
-![powerlevel](https://user-images.githubusercontent.com/54521023/104815969-0335b480-583e-11eb-9fba-d46c3ae21f33.gif)
+* Download [hack](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf) font and install it by double clicking on the **.tff** file. You can also use any other font but make sure it supports all the icons and glyphs required by **powerlevel10k**.
+* Select ``Hack Font`` as the default font.
+
+![3](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/3.png)
+
+### [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+> Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
 
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
-* By default a installation prompt will begin, but if it doesn't use ``p10k configure``. You can use it later also to try all the different themes and options
-* Activate powerlevel10k by changing the default theme to ``ZSH_THEME="powerlevel10k/powerlevel10k"`` in ``~/.zshrc``
 
-# zsh-autocomplete
+![1](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/1.gif)
 
-![auto](https://user-images.githubusercontent.com/54521023/104815959-f2853e80-583d-11eb-8846-2d65b4cff9b4.gif)
+* By default, an installation prompt will begin, but if it doesn't run ``p10k configure``.
+* Change the default theme to ``ZSH_THEME="powerlevel10k/powerlevel10k"`` inside ``~/.zshrc ``.
+* Commit the changes by running ``source ~/.zshrc``
 
-```
+![2](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/2.gif)
+
+### [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
+
+> Real-time type-ahead completion for Zsh. Asynchronous find-as-you-type autocompletion.
+
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-* Add the plugin to the list of plugins inside ~/.zshrc ``plugins=( [plugins...] zsh-autosuggestions)``
-* Activate the plugin by ``source ~/.zshrc``
 
-# zsh-syntaxhighlighting
+* Add ``zsh-autocomplete`` to the list of plugins inside ~/.zshrc ``plugins=( [plugins...])``
+* Commit the changes by running ``source ~/.zshrc``
 
-![syntax](https://user-images.githubusercontent.com/54521023/104815970-04ff7800-583e-11eb-9357-eccd3c972617.gif)
+![3](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/3.gif)
 
+### [zsh-syntaxhighlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+
+> This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
 
 ```
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-* Add the plugin to the list of plugins inside ~/.zshrc ``plugins=( [plugins...] zsh-syntax-highlighting)``
-* Activate the plugin by ``source ~/.zshrc``
 
-# fzf
+* Add ``zsh-syntax-highlighting`` to the list of plugins inside ~/.zshrc ``plugins=( [plugins...])``
+* Commit the changes by running ``source ~/.zshrc``
 
-![fzf](https://user-images.githubusercontent.com/54521023/104815961-fa44e300-583d-11eb-83a5-3d8a9866fba0.gif)
+![4](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/4.gif)
+
+### [autojump](https://github.com/wting/autojump)
+
+> A faster way to navigate your filesystem
+
+```
+git clone git://github.com/wting/autojump.git
+cd autojump && ./install.py
+```
+
+### [fzf](https://github.com/junegunn/fzf)
+
+>It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.
 
 ```
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 ```
 
-* Use ``ctrl + r`` to search for commands
-* Use ``ctrl + t`` to search for files
+![5](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/5.gif)
 
-# If you use VS Code
+* ``ctrl + t`` to navigate through the file system.
 
-* Paste this into ``setting.json`` 
+![6](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/6.gif)
+
+* ``ctrl + r`` to navigate through older commands.
+
+![7](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/7.gif)
+
+## For vs code users
+
+* Paste this into ``setting.json`` to render all the glyphs-icons in the integrated-terminal.
 ```
 {
 "terminal.integrated.fontFamily": "Hack Nerd Font",
@@ -72,7 +118,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 }
 ```
  
-# Reset
+## To use ``bash`` 
 
-* To use bash again type ``bash`` in the terminal
-* To go back to back to bash terminal type `` chsh -s $(which bash) ``
+* For a single session : ``bash``
+* To make bash the default terminal : `` chsh -s $(which bash) ``
