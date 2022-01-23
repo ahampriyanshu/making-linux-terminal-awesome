@@ -1,14 +1,16 @@
 # Making Linux Terminal Awesome
 
-## Installation
-
 ### [Zsh](https://www.zsh.org/)
 
 > The Z-shell or Zsh is an UNIX shell with support for various plugins and themes.
- 
-- **Debian(Ubuntu/Kali/Mint)**: ``sudo apt install zsh``
-- **Fedora**: ``sudo dnf install zsh``
-- **RHEL/CentOS**: ``sudo yum update && sudo yum -y install zsh``
+
+```sh
+sudo apt install zsh      [ Debian/Ubuntu ]
+sudo yum install zsh      [ RedHat/CentOS ]
+sudo pacman -S zsh        [ Arch/Manjaro ]
+sudo dnf install zsh      [ Fedora ]
+sudo zypper install zsh   [ OpenSUSE ]
+```
 
 ![1](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/1.png)
 
@@ -52,7 +54,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~
 
 ![2](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/2.gif)
 
-### [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
+### [zsh-autosuggestions](https://github.com/marlonrichert/zsh-autosuggestions)
 
 > Real-time type-ahead completion for Zsh. Asynchronous find-as-you-type autocompletion.
 
@@ -78,14 +80,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ![4](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/4.gif)
 
-### [autojump](https://github.com/wting/autojump)
 
-> A faster way to navigate your filesystem
-
-```
-git clone git://github.com/wting/autojump.git
-cd autojump && ./install.py
-```
 
 ### [fzf](https://github.com/junegunn/fzf)
 
@@ -106,7 +101,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 ![7](https://github.com/ahampriyanshu/making-linux-terminal-awesome/raw/metadata/7.gif)
 
-## For vs code users
+## If you use VS Code
 
 * Paste this into ``setting.json`` to render all the glyphs-icons in the integrated-terminal.
 ```
@@ -118,7 +113,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 }
 ```
  
-## To use ``bash`` 
+## To use ``bash`` again
 
 * For a single session : ``bash``
 * To make bash the default terminal : `` chsh -s $(which bash) ``
+
+### Copyright Guidelines
+* I will also soon be publishing this article on [GeeksforGeeks](https://www.geeksforgeeks.org/)
