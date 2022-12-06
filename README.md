@@ -70,7 +70,7 @@ Real-time type-ahead completion for Zsh. Asynchronous find-as-you-type autocompl
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-Add ``zsh-autocomplete`` to the list of plugins inside ~/.zshrc ``plugins=( [plugins...])``.Commit the changes by running 
+Add ``zsh-autosuggestions`` to the list of plugins inside ~/.zshrc ``plugins=( [plugins...])``.Commit the changes by running 
 ```bash
 source ~/.zshrc
 ```
